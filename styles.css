@@ -10,3 +10,12 @@
 .header-btn{
     background-color: #B68C5A;
 }
+.banner-section{
+    background-image: url(resources/images/banner.png);
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    
+}
+.banner-heading{
+    font-family: EB Garamond;
+}
