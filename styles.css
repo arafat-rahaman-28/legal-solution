@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+.header{
+    font-family: Poppins;
+}
+.main-navigation-bar ul li a{
+    color: #707070;
+    font-size: 1rem;
+}
+.header-btn{
+    background-color: #B68C5A;
+}
