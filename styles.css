@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
-.header{
+.header {
     font-family: Poppins;
 }
-.main-navigation-bar ul li a{
+.main-navigation-bar ul li a {
     color: #707070;
     font-size: 1rem;
 }
-.header-btn{
-    background-color: #B68C5A;
+.header-btn {
+    background-color: #b68c5a;
 }
-.banner-section{
+.banner-section {
     background-image: url(resources/images/banner.png);
     /* background: linear-gradient(0deg,rgba(46, 46, 46, 0.71) 0%, rgba(255, 255, 255, 0) 100%); */
+    border-radius: 8px;
 
+    /* background: linear-gradient(
+        0deg,
+        rgb(17, 17, 17),
+        rgba(17, 17, 17, 0) 100%
+    ); */
 }
-.banner-heading{
+.banner-heading {
     font-family: EB Garamond;
 }

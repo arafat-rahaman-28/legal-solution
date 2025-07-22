@@ -1,75 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Legal Solution</title>
-</head>
-<body class="bg-white text-gray-800">
-    <!-- Header -->
-    <header class="max-w-6xl mx-auto px-4 py-6">
-        <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-4">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <img class="h-11" src="resources/images/logo2.png" alt="Logo" />
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: Poppins;
+            }
+            .ham-menue {
+                width: 25px;
+                height: 3px;
+                background-color: black;
+                margin-top: 5px;
+            }
+            .max-width-container {
+                max-width: 1100px;
+                margin: 24px auto;
+            }
+            .eb-garamond-font {
+                font-family: EB Garamond;
+            }
+            .practice-area-cards div {
+                border-radius: 6px;
+            }
+        </style>
+        <title>Legal AID</title>
+    </head>
+    <body>
+        <header class="mx-4 border-b border-gray-300">
+            <nav class="max-width-container flex justify-between items-center">
+                <div class="shrink-0 w-32">
+                    <img src="resources/images/logo2.png" alt="" />
+                </div>
 
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:block">
-                <ul class="flex items-center gap-4 lg:gap-8 text-sm lg:text-base font-medium">
-                <li><a href="#" class="hover:text-[#B68C5A]">Home</a></li>
-                <li><a href="#" class="hover:text-[#B68C5A]">Services</a></li>
-                <li><a href="#" class="hover:text-[#B68C5A]">Cases</a></li>
-                <li><a href="#" class="hover:text-[#B68C5A]">Blog</a></li>
-                <li><a href="#" class="hover:text-[#B68C5A]">Contact Us</a></li>
+                <ul class="hidden">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
+
+                <div class="hidden">
+                    <button>Free Consultation</button>
+                </div>
+
+                <div>
+                    <div class="ham-menue"></div>
+                    <div class="ham-menue"></div>
+                    <div class="ham-menue"></div>
+                </div>
             </nav>
+        </header>
 
-            <!-- Button (Desktop Only) -->
-            <div class="hidden md:block">
-                <button class="bg-[#B68C5A] text-white px-6 py-3 rounded-lg font-semibold text-sm lg:text-lg hover:bg-[#a87c4a] transition">
-                Free Consultation
-                </button>
-            </div>
+        <main>
+            <section
+                class="banner-section h-96 bg-[url('/resources/images/banner.png')] bg-cover bg-center mx-4 text-white text-center mt-14 px-4 py-12"
+            >
+                <h1 class="text-3xl font-extrabold mb-2 eb-garamond-font">
+                    We Provide Effective Legal Solutions
+                </h1>
+                <p class="text-xs text-gray-300 mb-8">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour.
+                </p>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <input
+                        type="text"
+                        placeholder="Search your service"
+                        class="bg-white placeholder:text-gray-600 py-2 px-2 w-[80%] rounded-sm placeholder:text-center"
+                    />
+                    <button
+                        class="bg-[#B68C5A] text-white font-bold rounded-md py-2 px-2 w-[80%]"
+                    >
+                        Search
+                    </button>
+                </div>
+            </section>
 
-            <!-- Mobile Menu Button -->
-            <div class="block md:hidden">
-                <button>
-                    <!-- Heroicons Menu Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Banner Section -->
-        <div class="banner-section w-full h-[550px] mt-16 rounded-xl flex justify-center items-center px-50 py-25 text-center mb-[120px]">
-            <div class="bg-linear-to-t from-bg-red-600 to-bg-green-600">
-
-            
-                <div class="bg-slate-950/50  text-white p-10 text-center">
-                    <h1 class="banner-heading text-7xl font-extrabold text-center m-0">We Provide Effective Legal Solutions</h1>
-                    <p class="mt-6 mb-0">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
-                    </p>
-                    <div class="mt-8 w-[692px]">
-                        <input type="text" placeholder="Search your services" class=" bg-white w-[500px] py-4 px-5 text-xl mr-6 rounded-md placeholder:text-gray-500 text-black">
-                        <button class="bg-[#B68C5A] rounded-md px-9 py-4 font-semibold text-xl ml-0">Search</button>
+            <section class="practice-area mx-4 mt-12">
+                <h1 class="eb-garamond-font font-bold text-2xl text-center">
+                    The Legal Practice Area
+                </h1>
+                <p class="text-center text-xs mt-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour.
+                </p>
+                <div class="practice-area-cards mt-12 grid grid-cols-1 gap-6">
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
+                    </div>
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
+                    </div>
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
+                    </div>
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
+                    </div>
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
+                    </div>
+                    <div
+                        class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
+                    >
+                        <img
+                            class="w-[72px] my-4 mx-auto"
+                            src="resources/images/business.png"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-4xl font-bold text-[#414040] mb-3"
+                        >
+                            Business Law
+                        </h3>
+                        <p class="text-xs text-[#707070] mb-4">
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour.
+                        </p>
+                        <a href="#"
+                            ><img
+                                class="my-0 mx-auto"
+                                src="resources/images/Frame.png"
+                        /></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-</body>
+            </section>
+        </main>
+    </body>
 </html>
