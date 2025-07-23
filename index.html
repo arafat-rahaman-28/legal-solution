@@ -46,8 +46,7 @@
             }
             .contact-detail-card {
                 border-radius: 6px;
-                margin-left: 16px;
-                margin-right: 16px;
+                border: none;
             }
         </style>
         <title>Legal AID</title>
@@ -363,7 +362,7 @@
                 </div>
             </section>
 
-            <section class="contact-section mx-4 mt-12">
+            <section class="contact-section mx-4 mt-12 mb-12">
                 <h1
                     class="eb-garamond-font text-center text-4xl font-extrabold text-[#414040] mb-6"
                 >
@@ -453,7 +452,34 @@
                             </p>
                         </div>
                     </div>
-                    <div class="contact-form"></div>
+                    <div class="contact-form mt-6 grid grid-cols-1 gap-2">
+                        <input
+                            class="bg-[#F3F3F3] p-4 w-full rounded-md"
+                            type="text"
+                            placeholder="Your Name"
+                        />
+                        <input
+                            class="bg-[#F3F3F3] p-4 w-full rounded-md"
+                            type="email"
+                            placeholder="Your Email"
+                        />
+                        <input
+                            class="bg-[#F3F3F3] p-4 w-full rounded-md"
+                            type="text"
+                            placeholder="Subject"
+                        />
+                        <textarea
+                            class="bg-[#F3F3F3] p-4 w-full rounded-md"
+                            name="message"
+                            id="message"
+                            placeholder="Your Message"
+                        ></textarea>
+                        <button
+                            class="bg-[#B68C5A] w-full font-semibold text-xl rounded-md text-white px-4 py-4"
+                        >
+                            Send Message
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
