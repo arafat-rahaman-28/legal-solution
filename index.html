@@ -52,13 +52,13 @@
         <title>Legal AID</title>
     </head>
     <body>
-        <header class="mx-4 border-b border-gray-300">
+        <header class="mx-4 border-b border-gray-300 lg:max-w-5xl">
             <nav class="max-width-container flex justify-between items-center">
                 <div class="shrink-0 w-32">
                     <img src="resources/images/logo2.png" alt="" />
                 </div>
 
-                <ul class="hidden">
+                <ul class="hidden lg:flex lg:gap-6 lg:text-xl">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Cases</a></li>
@@ -66,11 +66,15 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
 
-                <div class="hidden">
-                    <button>Free Consultation</button>
+                <div class="hidden lg:block">
+                    <button
+                        class="bg-[#B68C5A] w-full font-semibold text-xl rounded-md text-white py-4 px-8"
+                    >
+                        Free Consultation
+                    </button>
                 </div>
 
-                <div>
+                <div class="lg:hidden">
                     <div class="ham-menue"></div>
                     <div class="ham-menue"></div>
                     <div class="ham-menue"></div>
@@ -80,24 +84,28 @@
 
         <main>
             <section
-                class="banner-section h-96 bg-[url('/resources/images/banner.png')] bg-cover bg-center mx-4 text-white text-center mt-14 px-4 py-12"
+                class="banner-section h-96 bg-[url('/resources/images/banner.png')] bg-cover bg-center mx-4 text-white text-center mt-14 px-4 py-12 lg:my-0 lg:mx-auto lg:mt-17 lg:py-[48px] lg:px-[100px] lg:max-w-4xl"
             >
-                <h1 class="text-3xl font-extrabold mb-2 eb-garamond-font">
+                <h1
+                    class="text-3xl font-extrabold mb-2 lg:mb-4 eb-garamond-font lg:text-7xl"
+                >
                     We Provide Effective Legal Solutions
                 </h1>
-                <p class="text-xs text-gray-300 mb-8">
+                <p class="text-xs text-gray-300 mb-8 lg:text-base">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour.
                 </p>
-                <div class="flex flex-col justify-center items-center gap-4">
+                <div
+                    class="flex flex-col justify-center items-center gap-4 lg:flex-row lg:gap-4"
+                >
                     <input
                         type="text"
                         placeholder="Search your service"
                         class="bg-white placeholder:text-gray-600 py-2 px-2 w-[80%] rounded-sm placeholder:text-center"
                     />
                     <button
-                        class="bg-[#B68C5A] text-white font-bold rounded-md py-2 px-2 w-[80%]"
+                        class="bg-[#B68C5A] text-white font-bold rounded-md py-2 px-2 w-[80%] lg:w-[20%]"
                     >
                         Search
                     </button>
@@ -105,15 +113,19 @@
             </section>
 
             <section class="practice-area mx-4 mt-12">
-                <h1 class="eb-garamond-font font-bold text-2xl text-center">
+                <h1
+                    class="eb-garamond-font font-bold text-2xl lg:text-4xl text-center"
+                >
                     The Legal Practice Area
                 </h1>
-                <p class="text-center text-xs mt-4">
+                <p class="text-center text-xs mt-4 w-xl my-0 mx-auto">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour.
                 </p>
-                <div class="practice-area-cards mt-12 grid grid-cols-1 gap-6">
+                <div
+                    class="practice-area-cards mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-2 lg:w-[880px] lg:my-9 lg:mx-auto"
+                >
                     <div
                         class="practice-area-card text-center w-2xs my-0 mx-auto border-[1px] border-gray-300 px-6 py-2"
                     >
@@ -262,36 +274,43 @@
             </section>
 
             <section
-                class="client-review text-center mt-16 mb-16 max-width-container"
+                class="client-review text-center mt-16 mb-16 max-width-container lg:max-w-4xl"
             >
                 <h1 class="eb-garamond-font text-4xl mb-6">
                     What Our Client Say
                 </h1>
-                <p class="text-[#707070] mb-18 text-sm">
+                <p
+                    class="text-[#707070] mb-18 text-sm w-3xl text-center my-0 mx-auto"
+                >
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour.
                 </p>
                 <div
-                    class="review-card h-[25rem] bg-[url('/resources/images/dark-banner.png')] bg-cover bg-center mx-4 text-white text-center mt-14 px-6 py-12 rounded-xl"
+                    class="review-card h-[25rem] bg-[url('/resources/images/dark-banner.png')] bg-cover bg-center mx-4 text-white text-center mt-14 px-14 rounded-xl lg:max-w-4xl lg:my-0 lg:mx-auto flex justify-center items-center"
                 >
-                    <img
-                        class="profile-pic my-0 mx-auto mb-6"
-                        src="resources/images/profile-image.jpg"
-                        alt=""
-                    />
-                    <h3 class="eb-garamond-font text-2xl font-extrabold mb-1">
-                        Awlad Hossain
-                    </h3>
-                    <p class="mb-4">UI/UX Designer</p>
-                    <p class="text-xs">
-                        Contrary to popular belief, Lorem Ipsum is not simply
-                        random text. It has roots in a piece of classical Latin
-                        literature from 45 BC, making it over 2000 years old.
-                        Richard McClintock, a Latin professor at Hampden-Sydney
-                        College in Virginia, looked up one of the more obscure
-                        Latin words, consectetur.
-                    </p>
+                    <div>
+                        <img
+                            class="profile-pic my-0 mx-auto mb-6"
+                            src="resources/images/profile-image.jpg"
+                            alt=""
+                        />
+                        <h3
+                            class="eb-garamond-font text-2xl font-extrabold mb-1"
+                        >
+                            Awlad Hossain
+                        </h3>
+                        <p class="mb-4">UI/UX Designer</p>
+                        <p class="text-xl">
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old. Richard McClintock, a Latin
+                            professor at Hampden-Sydney College in Virginia,
+                            looked up one of the more obscure Latin words,
+                            consectetur.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -301,22 +320,29 @@
                 >
                     Frequently Asked Questions
                 </h1>
-                <p class="text-center text-[#707070] mb-8">
+                <p class="text-center text-[#707070] mb-8 lg:max-w-5xl">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour.
                 </p>
-                <div class="faq-container">
+                <div
+                    class="faq-container lg:flex lg:justify-evenly lg:gap-32 lg:items-center lg:h-[579px]"
+                >
                     <div class="faq-cards grid grid-cols-1 gap-4 mb-6">
-                        <div
-                            class="faq-card px-2 py-4 flex justify-between items-center bg-[#F3F3F3] rounded-md"
-                        >
-                            <h1
-                                class="eb-garamond-font text-lg font-extrabold text-[#414040]"
-                            >
-                                1. Are application fee waivers available?
-                            </h1>
-                            <p class="text-lg text-[#414040]">+</p>
+                        <div class="faq-card px-2 py-4 bg-[#F3F3F3] rounded-md">
+                            <div class="flex justify-between items-center">
+                                <h1
+                                    class="eb-garamond-font text-lg font-extrabold text-[#414040]"
+                                >
+                                    1. Are application fee waivers available?
+                                </h1>
+                                <p class="text-lg text-[#414040]">-</p>
+                            </div>
+                            <p class="text-[#707070]">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, .
+                            </p>
                         </div>
 
                         <div
@@ -354,7 +380,7 @@
                     </div>
                     <div class="faq-image">
                         <img
-                            class="w-[90%]"
+                            class="h-[579px]"
                             src="resources/images/faq.png"
                             alt=""
                         />
@@ -362,7 +388,7 @@
                 </div>
             </section>
 
-            <section class="contact-section mx-4 mt-12 mb-12">
+            <section class="contact-section mx-4 mt-12 mb-12 hidden">
                 <h1
                     class="eb-garamond-font text-center text-4xl font-extrabold text-[#414040] mb-6"
                 >
